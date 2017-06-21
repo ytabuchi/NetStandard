@@ -24,7 +24,6 @@ namespace NetStandardLibrary
 
                 return doc.Value;
             }
-            //return null;
         }
     }
 }
