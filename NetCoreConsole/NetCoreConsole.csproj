@@ -9,4 +9,8 @@
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NetStandardLibrary\NetStandardLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
