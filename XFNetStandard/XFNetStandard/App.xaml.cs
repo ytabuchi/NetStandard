@@ -13,7 +13,7 @@ namespace XFNetStandard
         {
             InitializeComponent();
 
-            MainPage = new XFNetStandard.MainPage();
+            MainPage = new NavigationPage(new XFNetStandard.MainPage());
         }
 
         protected override void OnStart()

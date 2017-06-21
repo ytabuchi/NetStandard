@@ -13,5 +13,11 @@ namespace XFNetStandard
         {
             InitializeComponent();
         }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            var translatedText = await NetStandardLibrary.TranslateLib.TranslateTextAsync(entry.Text) ?? "Nothing";
+            label.Text = translatedText;
+        }
     }
 }

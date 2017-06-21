@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage x:Class="XFNetStandard.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XFNetStandard"
-             x:Class="XFNetStandard.MainPage">
+             Title="Translator API">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout Padding="4" Spacing="8">
+        <Entry x:Name="entry" Placeholder="日本語を入力してください" />
+        <Button Clicked="Button_Clicked" Text="Translate" />
+        <Label x:Name="label"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               Text="translated text here." />
+    </StackLayout>
 
 </ContentPage>
