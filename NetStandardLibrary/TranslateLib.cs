@@ -18,8 +18,8 @@ namespace NetStandardLibrary
 
             using (var client = new HttpClient())
             {
-                var data = $"{url}?appid={token}&text={rowText}&from=ja&to=en&category=generalnn";
-                var stream = await client.GetStreamAsync(data);
+                var sendUri = $"{url}?appid={token}&text={rowText}&from=ja&to=en&category=generalnn";
+                var stream = await client.GetStreamAsync(sendUri);
                 var doc = XElement.Load(stream);
 
                 return doc.Value;
