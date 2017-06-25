@@ -55,6 +55,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Secrets.cs" />
+    <Compile Include="SecretsSample.cs" />
     <Compile Include="TranslateLib.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
